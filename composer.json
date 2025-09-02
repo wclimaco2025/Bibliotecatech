@@ -1,0 +1,26 @@
+{
+  "name": "climaco/biblioteca",
+  "description": "Sistema de gestión de biblioteca con préstamos de libros",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Climaco",
+      "email": "info@climaco.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Climaco\\Biblioteca\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
