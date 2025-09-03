@@ -28,4 +28,8 @@ class Autor {
     {
         return $this->apellido;
     }
+
+    public function getNombreCompleto(){
+        return trim($this->nombre) . " " . trim($this->apellido);
+    }
 }

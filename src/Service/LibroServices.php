@@ -1,6 +1,17 @@
 <?php
 
 namespace Climaco\Biblioteca\Service;
+// Para cargar las clases Repository
+use Climaco\Biblioteca\Repository\{
+    AutorRepository,
+    CategoriaRepository,
+    LibroRepository,
+    PrestamoRepository
+
+};
+
+// Para cargar la clase de Models
+use Climaco\Biblioteca\Models\Libro;
 
 class LibroServices
 {
@@ -11,10 +22,10 @@ class LibroServices
 
     public function __construct()
     {
-        $this->libroRepository = new \Climaco\Biblioteca\Repository\LibroRepository();
-        $this->autorRepository = new \Climaco\Biblioteca\Repository\AutorRepository();
-        $this->categoriaRepository = new \Climaco\Biblioteca\Repository\CategoriaRepository();
-        $this->prestamoRepository = new \Climaco\Biblioteca\Repository\PrestamoRepository();
+        $this->libroRepository = new LibroRepository();
+        $this->autorRepository = new AutorRepository();
+        $this->categoriaRepository = new CategoriaRepository();
+        $this->prestamoRepository = new PrestamoRepository();
     }
 
     // Obtener todos los libros

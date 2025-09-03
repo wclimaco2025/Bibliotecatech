@@ -1,7 +1,9 @@
 <?php
     namespace Climaco\Biblioteca\Repository; 
     
-    require __DIR__ . "/vendor/autoload.php";
+    // Para usar las clases en los modelos
+    use Climaco\Biblioteca\Models\Categoria;
+
 
     class CategoriaRepository {
         
@@ -15,12 +17,12 @@
         private function inicializarCategorias() 
         {
             $this->categorias = [
-                new \Climaco\Biblioteca\Models\Categoria(1, "Literatura Clásica", "Obras literarias de reconocido valor universal y perdurable"),
-                new \Climaco\Biblioteca\Models\Categoria(2, "Ciencia Ficción", "Narrativa que explora conceptos futuristas, científicos y tecnológicos"),
-                new \Climaco\Biblioteca\Models\Categoria(3, "Literatura Infantil", "Libros dirigidos especialmente al público infantil y juvenil"),
-                new \Climaco\Biblioteca\Models\Categoria(4, "Fantasía", "Narrativa que incluye elementos mágicos y mundos imaginarios"),
-                new \Climaco\Biblioteca\Models\Categoria(5, "Romance", "Historias centradas en relaciones amorosas y sentimentales"),
-                new \Climaco\Biblioteca\Models\Categoria(6, "Thriller", "Novelas de suspense y misterio que mantienen al lector en tensión")
+                new Categoria(1, "Literatura Clásica", "Obras literarias de reconocido valor universal y perdurable"),
+                new Categoria(2, "Ciencia Ficción", "Narrativa que explora conceptos futuristas, científicos y tecnológicos"),
+                new Categoria(3, "Literatura Infantil", "Libros dirigidos especialmente al público infantil y juvenil"),
+                new Categoria(4, "Fantasía", "Narrativa que incluye elementos mágicos y mundos imaginarios"),
+                new Categoria(5, "Romance", "Historias centradas en relaciones amorosas y sentimentales"),
+                new Categoria(6, "Thriller", "Novelas de suspense y misterio que mantienen al lector en tensión")
             ];
         }
 

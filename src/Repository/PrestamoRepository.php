@@ -1,6 +1,9 @@
 <?php
     namespace Climaco\Biblioteca\Repository;
 
+    // Para usar las clases de Models
+    use Climaco\Biblioteca\Models\Prestamo;
+    
     class PrestamoRepository {
         
         private $prestamos = [];
@@ -13,11 +16,11 @@
         private function inicializarPrestamos() 
         {
             $this->prestamos = [
-                new \Climaco\Biblioteca\Models\Prestamo(1, 1, 1, "2024-02-01", "2024-02-16"),
-                new \Climaco\Biblioteca\Models\Prestamo(2, 2, 3, "2024-02-03", "2024-02-18"),
-                new \Climaco\Biblioteca\Models\Prestamo(3, 3, 5, "2024-02-05", "2024-02-20"),
-                new \Climaco\Biblioteca\Models\Prestamo(4, 1, 7, "2024-02-07", "2024-02-22"),
-                new \Climaco\Biblioteca\Models\Prestamo(5, 4, 2, "2024-02-08", "2024-02-23"),
+                new Prestamo(1, 1, 1, "2024-02-01", "2024-02-16"),
+                new Prestamo(2, 2, 3, "2024-02-03", "2024-02-18"),
+                new Prestamo(3, 3, 5, "2024-02-05", "2024-02-20"),
+                new Prestamo(4, 1, 7, "2024-02-07", "2024-02-22"),
+                new Prestamo(5, 4, 2, "2024-02-08", "2024-02-23"),
             ];
             
             // Marcar algunos como devueltos

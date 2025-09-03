@@ -1,7 +1,8 @@
 <?php
     namespace Climaco\Biblioteca\Repository;
 
-    require __DIR__ . "/vendor/autoload.php";
+    //Para usar las clases
+    use Climaco\Biblioteca\Models\Autor;
 
     class AutorRepository {
         
@@ -15,16 +16,16 @@
         private function inicializarAutores() 
         {
             $this->autores = [
-                new \Climaco\Biblioteca\Models\Autor(1, "Gabriel", "García Márquez"),
-                new \Climaco\Biblioteca\Models\Autor(2, "Miguel", "de Cervantes"),
-                new \Climaco\Biblioteca\Models\Autor(3, "George", "Orwell"),
-                new \Climaco\Biblioteca\Models\Autor(4, "Antoine", "de Saint-Exupéry"),
-                new \Climaco\Biblioteca\Models\Autor(5, "Fiódor", "Dostoievski"),
-                new \Climaco\Biblioteca\Models\Autor(6, "J.R.R.", "Tolkien"),
-                new \Climaco\Biblioteca\Models\Autor(7, "J.K.", "Rowling"),
-                new \Climaco\Biblioteca\Models\Autor(8, "Jane", "Austen"),
-                new \Climaco\Biblioteca\Models\Autor(9, "Dan", "Brown"),
-                new \Climaco\Biblioteca\Models\Autor(10, "Suzanne", "Collins")
+                new Autor(1, "Gabriel", "García Márquez"),
+                new Autor(2, "Miguel", "de Cervantes"),
+                new Autor(3, "George", "Orwell"),
+                new Autor(4, "Antoine", "de Saint-Exupéry"),
+                new Autor(5, "Fiódor", "Dostoievski"),
+                new Autor(6, "J.R.R.", "Tolkien"),
+                new Autor(7, "J.K.", "Rowling"),
+                new Autor(8, "Jane", "Austen"),
+                new Autor(9, "Dan", "Brown"),
+                new Autor(10, "Suzanne", "Collins")
             ];
         }
 

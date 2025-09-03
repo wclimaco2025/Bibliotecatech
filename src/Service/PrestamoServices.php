@@ -1,5 +1,16 @@
 <?php
     namespace Climaco\Biblioteca\Service;
+    
+    // Para cargar las clases Repository
+    use Climaco\Biblioteca\Repository\{
+        UsuarioRepository,
+        LibroRepository,
+        PrestamoRepository
+
+    };
+
+    // Para cargar la clase de Models
+    use Climaco\Biblioteca\Models\Prestamo;
 
     class PrestamoServices {
         
@@ -9,9 +20,9 @@
 
         public function __construct() 
         {
-            $this->prestamoRepository = new \Climaco\Biblioteca\Repository\PrestamoRepository();
-            $this->usuarioRepository = new \Climaco\Biblioteca\Repository\UsuarioRepository();
-            $this->libroRepository = new \Climaco\Biblioteca\Repository\LibroRepository();
+            $this->prestamoRepository = new PrestamoRepository();
+            $this->usuarioRepository = new UsuarioRepository();
+            $this->libroRepository = new LibroRepository();
         }
 
         // Crear un nuevo préstamo

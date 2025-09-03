@@ -1,5 +1,8 @@
 <?php
     namespace Climaco\Biblioteca\Repository; 
+    
+    // Para usar la clase Libro;
+    use Climaco\Biblioteca\Models\Libro;
 
     class LibroRepository {
         
@@ -13,16 +16,16 @@
         private function inicializarLibros() 
         {
             $this->libros = [
-                new \Climaco\Biblioteca\Models\Libro(1, "Cien años de soledad", "1967", 1, 1),
-                new \Climaco\Biblioteca\Models\Libro(2, "Don Quijote de la Mancha", "1605", 2, 1),
-                new \Climaco\Biblioteca\Models\Libro(3, "1984", "1949", 3, 2),
-                new \Climaco\Biblioteca\Models\Libro(4, "El principito", "1943", 4, 3),
-                new \Climaco\Biblioteca\Models\Libro(5, "Crimen y castigo", "1866", 5, 1),
-                new \Climaco\Biblioteca\Models\Libro(6, "El señor de los anillos", "1954", 6, 4),
-                new \Climaco\Biblioteca\Models\Libro(7, "Harry Potter y la piedra filosofal", "1997", 7, 4),
-                new \Climaco\Biblioteca\Models\Libro(8, "Orgullo y prejuicio", "1813", 8, 5),
-                new \Climaco\Biblioteca\Models\Libro(9, "El código Da Vinci", "2003", 9, 6),
-                new \Climaco\Biblioteca\Models\Libro(10, "Los juegos del hambre", "2008", 10, 2)
+                new Libro(1, "Cien años de soledad", "1967", 1, 1),
+                new Libro(2, "Don Quijote de la Mancha", "1605", 2, 1),
+                new Libro(3, "1984", "1949", 3, 2),
+                new Libro(4, "El principito", "1943", 4, 3),
+                new Libro(5, "Crimen y castigo", "1866", 5, 1),
+                new Libro(6, "El señor de los anillos", "1954", 6, 4),
+                new Libro(7, "Harry Potter y la piedra filosofal", "1997", 7, 4),
+                new Libro(8, "Orgullo y prejuicio", "1813", 8, 5),
+                new Libro(9, "El código Da Vinci", "2003", 9, 6),
+                new Libro(10, "Los juegos del hambre", "2008", 10, 2)
             ];
         }
 
