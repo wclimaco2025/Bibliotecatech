@@ -5,7 +5,7 @@ namespace Climaco\Biblioteca; ?>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-content">
-            <p>&copy; <?php echo date('Y'); ?> Sistema de Biblioteca Climaco. Todos los derechos reservados.</p>
+            <p>&copy; <?php echo date('Y'); ?> Sistema de Biblioteca Bibliotech. Todos los derechos reservados.</p>
             <p>Desarrollado con PHP - Gestión de Préstamos de Libros</p>
         </div>
     </div>

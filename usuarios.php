@@ -4,6 +4,7 @@ namespace Climaco\Biblioteca;
 
 // Cargar todas las clases del sistema
 require_once 'vendor/autoload.php';
+use Climaco\Biblioteca\Models\Usuario;
 
 // Crear instancias de los servicios
 $usuarioRepository = new \Climaco\Biblioteca\Repository\UsuarioRepository();
